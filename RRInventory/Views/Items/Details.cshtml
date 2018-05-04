@@ -1,0 +1,60 @@
+﻿@model RRInventory.Models.Item
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Item</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Railroad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Railroad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Manufacturer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Manufacturer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ModelNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Account.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Account.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Image.Jpg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Image.Jpg)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
